@@ -1,0 +1,91 @@
+{
+  "name": "dicemaster",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt-ts build",
+    "dev": "nuxt-ts",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*",
+    "test:unit": "cross-env TEST=unit ava ./test/specs/**/*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,vue}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "package.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "2.0.0",
+    "@nuxtjs/pwa": "3.2.2",
+    "nuxt": "2.14.7"
+  },
+  "devDependencies": {
+    "@ava/babel": "1.0.x",
+    "@changesets/changelog-github": "0.2.7",
+    "@changesets/cli": "2.11.x",
+    "@nuxt/types": "2.14.x",
+    "@nuxt/typescript-build": "2.0.x",
+    "@nuxtjs/tailwindcss": "3.2.x",
+    "@typescript-eslint/eslint-plugin": "4.7.x",
+    "@typescript-eslint/parser": "4.7.x",
+    "@vue/test-utils": "1.1.x",
+    "@zazen/eslint-config": "2.1.x",
+    "@zazen/stylelint-config": "1.0.x",
+    "ava": "3.13.x",
+    "babel-plugin-module-resolver": "4.0.x",
+    "cross-env": "7.0.x",
+    "eslint": "7.13.x",
+    "eslint-plugin-vue": "7.1.x",
+    "husky": "4.3.x",
+    "import-sort-style-python": "1.0.x",
+    "jsdom": "16.4.x",
+    "jsdom-global": "3.0.x",
+    "lint-staged": "10.5.x",
+    "prettier": "2.1.x",
+    "prettier-plugin-import-sort": "0.0.6",
+    "prettier-plugin-packagejson": "2.2.x",
+    "require-extension-hooks": "0.3.3",
+    "require-extension-hooks-babel": "1.0.x",
+    "require-extension-hooks-vue": "3.0.x",
+    "stylelint": "13.7.x",
+    "tailwindcss-capsize": "1.2.x"
+  },
+  "importSort": {
+    ".js,.ts,.vue": {
+      "parser": "babylon",
+      "style": "python",
+      "options": {
+        "knownFramework": [
+          "@nuxt",
+          "nuxt",
+          "@vue",
+          "vue"
+        ],
+        "knownFirstparty": [
+          "~"
+        ]
+      }
+    }
+  }
+}
