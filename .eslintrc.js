@@ -1,7 +1,7 @@
 module.exports = {
-    extends: ['@zazen/eslint-config', 'plugin:vue/vue3-recommended', 'prettier/vue'],
+    extends: ['@zazen', 'plugin:vue/vue3-recommended'],
     rules: {
-        "vue/html-indent": "off",
+        'vue/html-indent': 'off',
     },
     overrides: [
         {
@@ -17,5 +17,5 @@ module.exports = {
                 node: true,
             },
         },
-    ]
+    ],
 }

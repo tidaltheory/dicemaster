@@ -35,7 +35,7 @@ module.exports = {
         },
         fontFamily: {
             display: 'Antenna, sans-serif',
-            sans: 'Inter, sans-serif'
+            sans: 'Inter, sans-serif',
         },
         fontSize: {
             6: '1.5rem',
