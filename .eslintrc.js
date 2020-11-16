@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['@zazen', 'plugin:vue/vue3-recommended'],
+    extends: ['@zazen', '@zazen/eslint-config/vue'],
     rules: {
         'vue/html-indent': 'off',
     },
@@ -9,12 +9,18 @@ module.exports = {
             extends: [
                 // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended.json
                 'plugin:@typescript-eslint/recommended',
+                'plugin:prettier/recommended',
                 // https://github.com/prettier/eslint-config-prettier/blob/master/%40typescript-eslint.js
                 'prettier/@typescript-eslint',
             ],
-            parser: '@typescript-eslint/parser',
+            parserOptions: {
+                parser: '@typescript-eslint/parser',
+            },
             env: {
                 node: true,
+            },
+            rules: {
+                'prefer-const': 'off',
             },
         },
     ],

@@ -1,14 +1,10 @@
 export default {
     /**
-     * Nuxt rendering mode
-     * @see https://nuxtjs.org/api/configuration-mode
-     */
-    mode: 'universal',
-    /**
      * Nuxt target
      * @see https://nuxtjs.org/api/configuration-target
      */
     target: 'static',
+
     /**
      * Headers of the page
      * @see https://nuxtjs.org/api/configuration-head
@@ -27,28 +23,44 @@ export default {
                 content: process.env.npm_package_description || '',
             },
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [
+            {
+                rel: 'stylesheet',
+                href:
+                    'https://fonts.googleapis.com/css2?family=Inter&display=swap',
+            },
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        ],
+        bodyAttrs: {
+            class: 'text-grey-100 bg-grey-800',
+        },
     },
+
     /** Global CSS */
     css: [],
+
     /**
      * Plugins to load before mounting the App
      * @see https://nuxtjs.org/guide/plugins
      */
     plugins: [],
+
     /**
      * Auto import components
      * @see https://nuxtjs.org/api/configuration-components
      */
     components: true,
+
     /** Nuxt.js dev-modules */
     buildModules: [
         '@nuxt/typescript-build',
         /** @see https://github.com/nuxt-community/nuxt-tailwindcss */
         '@nuxtjs/tailwindcss',
     ],
+
     /** Nuxt.js modules */
     modules: ['@nuxtjs/pwa'],
+
     /**
      * Build configuration
      * @see https://nuxtjs.org/api/configuration-build/
