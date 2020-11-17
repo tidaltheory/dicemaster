@@ -3,31 +3,42 @@
         <div>
             <Logo />
             <h1 class="title">dicemaster</h1>
-            <div class="links">
-                <a
-                    href="https://nuxtjs.org/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button--green"
-                >
-                    Documentation
-                </a>
-                <a
-                    href="https://github.com/nuxt/nuxt.js"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button--grey"
-                >
-                    GitHub
-                </a>
-            </div>
+            <Columns>
+                <Column>
+                    <a
+                        href="https://nuxtjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button--green"
+                    >
+                        Documentation
+                    </a>
+                </Column>
+                <Column>
+                    <a
+                        href="https://github.com/nuxt/nuxt.js"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button--grey"
+                    >
+                        GitHub
+                    </a>
+                </Column>
+            </Columns>
         </div>
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
-export default Vue.extend({})
+import Column from '~/components/layout/Column.vue'
+import Columns from '~/components/layout/Columns.vue'
+export default Vue.extend({
+    components: {
+        Column,
+        Columns,
+    },
+})
 </script>
 
 <style>
