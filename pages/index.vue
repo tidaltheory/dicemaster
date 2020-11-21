@@ -3,7 +3,7 @@
         <div>
             <Logo />
             <h1 class="title">dicemaster</h1>
-            <Columns>
+            <Columns space="4" align="center">
                 <Column>
                     <a
                         href="https://nuxtjs.org/"

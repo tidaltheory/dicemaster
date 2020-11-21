@@ -8,8 +8,7 @@
  * @see Source   https://github.com/chakra-ui/chakra-ui-vue/blob/master/packages/chakra-ui-core/src/CBox/CBox.js
  */
 
-import Vue , { VNode } from 'vue'
-import { createStyledAttrsMixin } from '../utils'
+import Vue from 'vue'
 
 /**
  * CBox component
@@ -18,7 +17,7 @@ import { createStyledAttrsMixin } from '../utils'
  *
  * @see Docs https://vue.chakra-ui.com/box
  */
-export const CBox = Vue.component('Box', {
+export default Vue.component('Box', {
     props: {
         as: {
             type: [String, Object],
@@ -30,7 +29,7 @@ export const CBox = Vue.component('Box', {
         },
     },
 
-    render(h): VNode {
+    render(h) {
         return h(
             this.as,
             {
@@ -44,4 +43,4 @@ export const CBox = Vue.component('Box', {
             this.$slots.default,
         )
     },
-}
+})

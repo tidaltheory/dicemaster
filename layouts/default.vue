@@ -40,7 +40,6 @@ html {
 .button--grey {
     display: inline-block;
     padding: 10px 30px;
-    margin-left: 15px;
     color: #35495e;
     text-decoration: none;
     border: 1px solid #35495e;

@@ -10,20 +10,17 @@ const itemsClassMap = {
     bottom: 'items-end',
 }
 
-export type AlignX = 'left' | 'center' | 'right'
-export type AlignY = 'top' | 'center' | 'bottom'
+// export type AlignX = 'left' | 'center' | 'right'
+// export type AlignY = 'top' | 'center' | 'bottom'
 
-interface UseFlexAlignProps {
-    align?: AlignX
-    alignY?: AlignY
-}
+// interface UseFlexAlignProps {
+//     align?: AlignX
+//     alignY?: AlignY
+// }
 
-type UseFlexAlignReturn = Record<string, string | undefined>
+// type UseFlexAlignReturn = Record<string, string | undefined>
 
-export function useFlexAlign({
-    align,
-    alignY,
-}: UseFlexAlignProps): UseFlexAlignReturn {
+export function useFlexAlign({ align, alignY }) {
     return {
         alignClass: align ? justifyClassMap[align] : undefined,
         justifyClass: alignY ? itemsClassMap[alignY] : undefined,

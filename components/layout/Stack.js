@@ -1,35 +1,35 @@
-import Vue, { VNode } from 'vue'
+import Vue from 'vue'
 
 import Divider from './Divider.vue'
 
-const validStackElements = ['div', 'ol', 'ul'] as const
-const spaceClassNames: Record<string, Record<string, string>> = {
-    '2': {
+// const validStackElements = ['div', 'ol', 'ul']
+const spaceClassNames = {
+    2: {
         space: 'pt-2',
         offset: 'before:-mt-2',
     },
-    '4': {
+    4: {
         space: 'pt-4',
         offset: 'before:-mt-4',
     },
 }
 
-interface StackProps {
-    element?: typeof validStackElements[number]
-    space: 'none' | keyof typeof spaceClassNames
-    dividers?: boolean
-}
+// interface StackProps {
+//     element?: typeof validStackElements[number]
+//     space: 'none' | keyof typeof spaceClassNames
+//     dividers?: boolean
+// }
 
-export default Vue.component('Stack', {
+export default Vue.component({
     props: {
         space: {
-            type: String as () => StackProps['space'],
+            type: String,
             default: 'none',
         },
         dividers: Boolean,
     },
 
-    render(createElement): VNode {
+    render(createElement) {
         let stackNodes =
             (this.$slots.default &&
                 this.$slots.default.filter((child) => child.tag)) ||

@@ -1,11 +1,11 @@
 <template>
-    <div :class="{ spaceClass, alignClass }" class="flex">
+    <div :class="[spaceClass, alignClass]" class="flex">
         <slot />
     </div>
 </template>
 <script>
 import Vue from 'vue'
-import { AlignX, AlignY, useFlexAlign } from '~/hooks/useFlexAlign'
+import { useFlexAlign } from '~/hooks/useFlexAlign'
 const spaceClassesMap = {
     4: 'gap-4',
 }
@@ -19,11 +19,11 @@ export default Vue.component('Columns', {
             default: 'none',
         },
         align: {
-            type: () => AlignX,
+            type: String,
             default: undefined,
         },
         alignY: {
-            type: AlignY,
+            type: String,
             default: undefined,
         },
     },
@@ -32,7 +32,11 @@ export default Vue.component('Columns', {
             return this.space !== 'none' ? spaceClassesMap[this.space] : null
         },
         alignClass() {
-            return useFlexAlign({ align: this.align, alignY: this.alignY })
+            let { alignClass, justifyClass } = useFlexAlign({
+                align: this.align,
+                alignY: this.alignY,
+            })
+            return [alignClass, justifyClass]
         },
     },
 })

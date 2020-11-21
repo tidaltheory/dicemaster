@@ -3,11 +3,11 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "build": "nuxt-ts build",
-        "dev": "nuxt-ts",
-        "generate": "nuxt-ts generate",
+        "build": "nuxt build",
+        "dev": "nuxt",
+        "generate": "nuxt generate",
         "lint:scripts": "eslint '**/*.{js,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
-        "start": "nuxt-ts start",
+        "start": "nuxt start",
         "test": "npm run test:unit && npm run test:e2e",
         "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*",
         "test:unit": "cross-env TEST=unit ava ./test/specs/**/*"
@@ -38,7 +38,6 @@
         "trailingComma": "all"
     },
     "dependencies": {
-        "@nuxt/typescript-runtime": "2.0.0",
         "@nuxtjs/pwa": "3.2.2",
         "nuxt": "2.14.7"
     },
@@ -46,11 +45,7 @@
         "@ava/babel": "1.0.x",
         "@changesets/changelog-github": "0.2.7",
         "@changesets/cli": "2.11.x",
-        "@nuxt/types": "2.14.x",
-        "@nuxt/typescript-build": "2.0.x",
         "@nuxtjs/tailwindcss": "3.2.x",
-        "@typescript-eslint/eslint-plugin": "4.7.x",
-        "@typescript-eslint/parser": "4.7.x",
         "@vue/test-utils": "1.1.x",
         "@zazen/eslint-config": "2.1.x",
         "@zazen/stylelint-config": "1.0.x",
