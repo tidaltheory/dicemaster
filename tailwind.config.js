@@ -22,6 +22,18 @@ module.exports = {
                 800: '#202326',
                 900: '#16191b',
             },
+            slate: {
+                50: '#f7f9fc',
+                100: '#edf1f7',
+                200: '#e4e9f2',
+                300: '#c5cee0',
+                400: '#8f9bb3',
+                500: '#2e3a59',
+                600: '#222b45',
+                700: '#1a2138',
+                800: '#151a30',
+                900: '#101426',
+            },
             cyan: {
                 100: '#d4fffd',
                 200: '#aafcff',
@@ -62,8 +74,8 @@ module.exports = {
                 unitsPerEm: 2816,
             },
         },
+        extend: {},
     },
-    extend: {},
     // variants: {},
     plugins: [tailwindcssCapsize.default({})],
     purge: {

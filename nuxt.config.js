@@ -27,12 +27,12 @@ export default {
             {
                 rel: 'stylesheet',
                 href:
-                    'https://fonts.googleapis.com/css2?family=Inter&display=swap',
+                    'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap',
             },
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         ],
         bodyAttrs: {
-            class: 'text-grey-100 bg-grey-800',
+            class: 'text-slate-50 bg-slate-800',
         },
     },
 

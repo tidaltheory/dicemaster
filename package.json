@@ -66,6 +66,7 @@
         "require-extension-hooks-babel": "1.0.x",
         "require-extension-hooks-vue": "3.0.x",
         "stylelint": "13.7.x",
+        "tailwindcss": "2.0.1-compat",
         "tailwindcss-capsize": "1.2.x"
     },
     "importSort": {

@@ -1,53 +1,19 @@
 <template>
-    <div>
-        <Nuxt />
-    </div>
+    <Columns>
+        <Column>
+            <Nuxt />
+        </Column>
+        <Column> </Column>
+    </Columns>
 </template>
 
-<style>
-html {
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-        'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
-    word-spacing: 1px;
-    text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+<script>
+import Column from '~/components/layout/Column.vue'
+import Columns from '~/components/layout/Columns.vue'
+export default {
+    components: {
+        Column,
+        Columns,
+    },
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-.button--green {
-    display: inline-block;
-    padding: 10px 30px;
-    color: #3b8070;
-    text-decoration: none;
-    border: 1px solid #3b8070;
-    border-radius: 4px;
-}
-
-.button--green:hover {
-    color: #fff;
-    background-color: #3b8070;
-}
-
-.button--grey {
-    display: inline-block;
-    padding: 10px 30px;
-    color: #35495e;
-    text-decoration: none;
-    border: 1px solid #35495e;
-    border-radius: 4px;
-}
-
-.button--grey:hover {
-    color: #fff;
-    background-color: #35495e;
-}
-</style>
+</script>
