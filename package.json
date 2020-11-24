@@ -32,6 +32,7 @@
         ]
     },
     "prettier": {
+        "htmlWhitespaceSensitivity": "ignore",
         "semi": false,
         "singleQuote": true,
         "tabWidth": 4,

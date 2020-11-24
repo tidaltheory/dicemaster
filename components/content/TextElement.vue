@@ -1,6 +1,6 @@
 <template>
     <component
-        :is="element"
+        :is="tag"
         class="font-sans text-6 leading-normal text-white capsize"
     >
         <slot />
@@ -9,10 +9,16 @@
 
 <script>
 export default {
+    name: 'TextElement',
     props: {
         element: {
             type: String,
             default: 'span',
+        },
+    },
+    computed: {
+        tag() {
+            return this.element
         },
     },
 }

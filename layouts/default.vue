@@ -3,7 +3,7 @@
         <Column>
             <Nuxt />
         </Column>
-        <Column> </Column>
+        <Column></Column>
     </Columns>
 </template>
 

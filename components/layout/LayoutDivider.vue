@@ -5,6 +5,5 @@
 </template>
 
 <script>
-import Vue from 'vue'
-export default Vue.component('Divider', {})
+export default {}
 </script>
