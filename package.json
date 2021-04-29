@@ -46,7 +46,7 @@
     "@changesets/changelog-github": "0.3.0",
     "@changesets/cli": "2.14.1",
     "@nuxtjs/tailwindcss": "3.2.0",
-    "@vue/test-utils": "1.1.1",
+    "@vue/test-utils": "1.1.4",
     "@zazen/eslint-config": "2.1.1",
     "@zazen/stylelint-config": "1.0.0",
     "ava": "3.13.0",
