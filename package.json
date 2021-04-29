@@ -1,90 +1,89 @@
 {
-    "name": "dicemaster",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "build": "nuxt build",
-        "dev": "nuxt",
-        "generate": "nuxt generate",
-        "lint:scripts": "eslint '**/*.{js,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
-        "start": "nuxt start",
-        "test": "npm run test:unit && npm run test:e2e",
-        "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*",
-        "test:unit": "cross-env TEST=unit ava ./test/specs/**/*"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{css,vue}": [
-            "stylelint --fix",
-            "git add"
-        ],
-        "*.{js,vue}": [
-            "eslint --fix",
-            "git add"
-        ],
-        "package.json": [
-            "prettier --write",
-            "git add"
-        ]
-    },
-    "prettier": {
-        "htmlWhitespaceSensitivity": "ignore",
-        "semi": false,
-        "singleQuote": true,
-        "tabWidth": 4,
-        "trailingComma": "all"
-    },
-    "dependencies": {
-        "@nuxtjs/pwa": "3.2.2",
-        "nuxt": "2.14.7"
-    },
-    "devDependencies": {
-        "@ava/babel": "1.0.1",
-        "@changesets/changelog-github": "0.3.0",
-        "@changesets/cli": "2.14.1",
-        "@nuxtjs/tailwindcss": "3.2.0",
-        "@vue/test-utils": "1.1.1",
-        "@zazen/eslint-config": "2.1.1",
-        "@zazen/stylelint-config": "1.0.0",
-        "ava": "3.13.0",
-        "babel-plugin-module-resolver": "4.0.0",
-        "cross-env": "7.0.2",
-        "eslint": "7.13.0",
-        "eslint-plugin-vue": "7.1.0",
-        "husky": "4.3.0",
-        "import-sort-style-python": "1.0.2",
-        "jsdom": "16.4.0",
-        "jsdom-global": "3.0.2",
-        "lint-staged": "10.5.1",
-        "prettier": "2.1.2",
-        "prettier-plugin-import-sort": "0.0.6",
-        "prettier-plugin-packagejson": "2.2.7",
-        "require-extension-hooks": "0.3.3",
-        "require-extension-hooks-babel": "1.0.0",
-        "require-extension-hooks-vue": "3.0.0",
-        "stylelint": "13.7.2",
-        "tailwindcss": "2.0.1-compat",
-        "tailwindcss-capsize": "1.2.0"
-    },
-    "importSort": {
-        ".js,.ts,.vue": {
-            "parser": "babylon",
-            "style": "python",
-            "options": {
-                "knownFramework": [
-                    "@nuxt",
-                    "nuxt",
-                    "@vue",
-                    "vue"
-                ],
-                "knownFirstparty": [
-                    "~"
-                ]
-            }
-        }
+  "name": "dicemaster",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "lint:scripts": "eslint '**/*.{js,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
+    "start": "nuxt start",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*",
+    "test:unit": "cross-env TEST=unit ava ./test/specs/**/*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{css,vue}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "package.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "htmlWhitespaceSensitivity": "ignore",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "3.2.2",
+    "nuxt": "2.14.7"
+  },
+  "devDependencies": {
+    "@ava/babel": "1.0.1",
+    "@changesets/changelog-github": "0.3.0",
+    "@changesets/cli": "2.14.1",
+    "@nuxtjs/tailwindcss": "3.2.0",
+    "@vue/test-utils": "1.1.1",
+    "@zazen/eslint-config": "2.1.1",
+    "@zazen/stylelint-config": "1.0.0",
+    "ava": "3.13.0",
+    "babel-plugin-module-resolver": "4.0.0",
+    "cross-env": "7.0.2",
+    "eslint": "7.13.0",
+    "eslint-plugin-vue": "7.1.0",
+    "husky": "4.3.0",
+    "import-sort-style-python": "1.0.2",
+    "jsdom": "16.4.0",
+    "jsdom-global": "3.0.2",
+    "lint-staged": "10.5.1",
+    "prettier": "2.1.2",
+    "prettier-plugin-import-sort": "0.0.6",
+    "prettier-plugin-packagejson": "2.2.7",
+    "require-extension-hooks": "0.3.3",
+    "require-extension-hooks-babel": "1.0.0",
+    "require-extension-hooks-vue": "3.0.0",
+    "stylelint": "13.7.2",
+    "tailwindcss": "2.0.1-compat",
+    "tailwindcss-capsize": "1.2.0"
+  },
+  "importSort": {
+    ".js,.ts,.vue": {
+      "parser": "babylon",
+      "style": "python",
+      "options": {
+        "knownFramework": [
+          "@nuxt",
+          "nuxt",
+          "@vue",
+          "vue"
+        ],
+        "knownFirstparty": [
+          "~"
+        ]
+      }
+    }
+  }
 }

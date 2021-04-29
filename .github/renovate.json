@@ -1,6 +1,4 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "commitMessagePrefix": "Chore: "
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["local>tidaltheory/.github:renovate-config"]
 }
