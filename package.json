@@ -44,7 +44,7 @@
   "devDependencies": {
     "@ava/babel": "1.0.1",
     "@changesets/changelog-github": "0.4.0",
-    "@changesets/cli": "2.14.1",
+    "@changesets/cli": "2.16.0",
     "@nuxtjs/tailwindcss": "3.2.0",
     "@vue/test-utils": "1.1.4",
     "@zazen/eslint-config": "2.1.1",
