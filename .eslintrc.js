@@ -1,5 +1,8 @@
 module.exports = {
-    extends: ['@zazen', '@zazen/eslint-config/vue'],
+    extends: ['@nuxtjs/eslint-config-typescript', '@zazen/eslint-config/vue'],
+    parserOptions: {
+        project: null,
+    },
     rules: {
         'vue/html-indent': 'off',
     },

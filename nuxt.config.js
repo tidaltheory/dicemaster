@@ -53,6 +53,8 @@ export default {
 
     /** Nuxt.js dev-modules */
     buildModules: [
+        /** @see https://go.nuxtjs.dev/typescript */
+        '@nuxt/typescript-build',
         /** @see https://github.com/nuxt-community/nuxt-tailwindcss */
         '@nuxtjs/tailwindcss',
     ],

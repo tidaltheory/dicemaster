@@ -9,7 +9,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from 'vue'
 import Heading from '~/components/content/Heading.vue'
 import LayoutStack from '~/components/layout/LayoutStack.vue'
