@@ -50,7 +50,7 @@
     "@zazen/eslint-config": "2.3.0",
     "@zazen/stylelint-config": "2.0.0",
     "ava": "3.15.0",
-    "babel-plugin-module-resolver": "4.0.0",
+    "babel-plugin-module-resolver": "4.1.0",
     "cross-env": "7.0.2",
     "eslint": "7.25.0",
     "eslint-plugin-vue": "7.9.0",
