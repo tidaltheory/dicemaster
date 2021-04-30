@@ -47,7 +47,7 @@
     "@changesets/cli": "2.16.0",
     "@nuxtjs/tailwindcss": "3.2.0",
     "@vue/test-utils": "1.1.4",
-    "@zazen/eslint-config": "2.1.1",
+    "@zazen/eslint-config": "2.3.0",
     "@zazen/stylelint-config": "2.0.0",
     "ava": "3.15.0",
     "babel-plugin-module-resolver": "4.0.0",
