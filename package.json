@@ -61,7 +61,7 @@
     "prettier": "2.2.1",
     "prettier-plugin-import-sort": "0.0.6",
     "prettier-plugin-packagejson": "2.2.10",
-    "stylelint": "13.13.0",
+    "stylelint": "13.13.1",
     "tailwindcss-capsize": "1.2.2",
     "ts-jest": "26.5.5",
     "vue-jest": "3.0.7"
