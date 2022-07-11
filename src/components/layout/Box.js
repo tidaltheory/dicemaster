@@ -17,30 +17,31 @@ import Vue from 'vue'
  *
  * @see Docs https://vue.chakra-ui.com/box
  */
-export default Vue.component('Box', {
-    props: {
-        as: {
-            type: [String, Object],
-            default: 'div',
-        },
-        to: {
-            type: [String, Object],
-            default: '',
-        },
-    },
 
-    render(h) {
-        return h(
-            this.as,
-            {
-                props: {
-                    to: this.to,
-                },
-                class: this.className,
-                on: this.listeners$,
-                attrs: this.computedAttrs,
-            },
-            this.$slots.default,
-        )
-    },
+export default Vue.component('Box', {
+	props: {
+		as: {
+			type: [String, Object],
+			default: 'div',
+		},
+		to: {
+			type: [String, Object],
+			default: '',
+		},
+	},
+
+	render(h) {
+		return h(
+			this.as,
+			{
+				props: {
+					to: this.to,
+				},
+				class: this.className,
+				on: this.listeners$,
+				attrs: this.computedAttrs,
+			},
+			this.$slots.default
+		)
+	},
 })
