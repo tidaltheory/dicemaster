@@ -21,22 +21,34 @@ const config = {
 			{
 				files: ['**/*.vue', '**/components/**/*.{js,vue}'],
 				rules: {
-					'unicorn/filename-case': 'off',
-					// Temp during refactor.
-					'vue/multi-word-component-names': 'off',
+					'unicorn/prevent-abbreviations': [
+						'error',
+						{ allowList: { props: true } },
+					],
 				},
 			},
 			{
-				files: ['src/pages/**/*.vue', 'src/layouts/**/*.vue'],
+				files: [
+					'src/pages/**/*.vue',
+					'src/layouts/**/*.vue',
+					'src/App.vue',
+				],
 				rules: {
+					'unicorn/filename-case': 'off',
 					'vue/multi-word-component-names': 'off',
 				},
 			},
 			{
-				files: ['*.config.{js,ts}'],
+				files: ['*.config.{js,ts}', '.*rc.js'],
 				rules: {
 					'import/no-extraneous-dependencies': 'off',
 					'unicorn/prefer-module': 'off',
+				},
+			},
+			{
+				files: ['*.html'],
+				rules: {
+					'vue/comment-directive': 'off',
 				},
 			},
 		],

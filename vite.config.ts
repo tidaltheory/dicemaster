@@ -19,6 +19,7 @@ export default defineConfig({
 	plugins: [
 		Vue({
 			include: [/\.vue$/, /\.md$/],
+			reactivityTransform: true,
 		}),
 
 		// https://github.com/hannoeru/vite-plugin-pages
@@ -40,8 +41,8 @@ export default defineConfig({
 			registerType: 'autoUpdate',
 			includeAssets: ['favicon.svg'],
 			manifest: {
-				name: 'Planeside',
-				short_name: 'Planeside',
+				name: 'Dice Master',
+				short_name: 'Dice Master',
 				theme_color: '#ffffff',
 				display: 'standalone',
 				icons: [

@@ -1,16 +1,14 @@
-<template>
-	<div :class="[spaceClass, alignClass]" class="flex">
-		<slot />
-	</div>
-</template>
-<script>
-import Vue from 'vue'
-import { useFlexAlign } from '~/hooks/use-flex-align.js'
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+import { useFlexAlign } from '../hooks/use-flex-align.js'
 
 const spaceClassesMap = {
 	4: 'gap-4',
 }
-export default Vue.component('Columns', {
+
+export default defineComponent({
+	name: 'LayoutColumns',
 	provide() {
 		return { space: this.space }
 	},
@@ -42,3 +40,9 @@ export default Vue.component('Columns', {
 	},
 })
 </script>
+
+<template>
+	<div :class="[spaceClass, alignClass]" class="flex">
+		<slot />
+	</div>
+</template>

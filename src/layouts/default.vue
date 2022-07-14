@@ -1,21 +1,13 @@
-<template>
-	<Columns>
-		<Column>
-			<router-view />
-		</Column>
-		<Column></Column>
-	</Columns>
-</template>
-
-<script>
-import Vue from 'vue'
-import Column from '~/components/layout/Column.vue'
-import Columns from '~/components/layout/Columns.vue'
-
-export default Vue.extend({
-	components: {
-		Column,
-		Columns,
-	},
-})
+<script setup lang="ts">
+import LayoutColumn from '~/components/layout-column.vue'
+import LayoutColumns from '~/components/layout-columns.vue'
 </script>
+
+<template>
+	<layout-columns>
+		<layout-column>
+			<router-view />
+		</layout-column>
+		<layout-column></layout-column>
+	</layout-columns>
+</template>

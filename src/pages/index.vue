@@ -1,33 +1,16 @@
+<script setup lang="ts">
+import ContentHeading from '~/components/content-heading.vue'
+import LayoutStack from '~/components/layout-stack.vue'
+import RollControl from '~/components/roll-control.vue'
+</script>
+
 <template>
 	<div class="p-20">
 		<header>
-			<Heading :level="1">Dice Master</Heading>
+			<content-heading :level="1">Dice Master</content-heading>
 		</header>
-		<LayoutStack space="4" align="right">
+		<layout-stack space="4" align="right">
 			<roll-control />
-		</LayoutStack>
+		</layout-stack>
 	</div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import Heading from '~/components/content/Heading.vue'
-import LayoutStack from '~/components/layout/LayoutStack.vue'
-import RollControl from '~/components/RollControl.vue'
-
-export default Vue.extend({
-	components: {
-		Heading,
-		RollControl,
-		LayoutStack,
-	},
-})
-</script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-</style>
