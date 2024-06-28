@@ -40,7 +40,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "0.4.0",
     "@changesets/cli": "2.16.0",
-    "@nuxt/types": "2.15.4",
+    "@nuxt/types": "2.18.1",
     "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/eslint-config-typescript": "6.0.0",
     "@nuxtjs/tailwindcss": "4.0.3",
