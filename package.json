@@ -34,8 +34,8 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "3.3.5",
-    "core-js": "3.11.1",
-    "nuxt": "2.15.4"
+    "core-js": "3.38.1",
+    "nuxt": "2.18.1"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.4.0",
