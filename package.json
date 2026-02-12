@@ -43,7 +43,7 @@
     "@nuxt/types": "2.15.4",
     "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/eslint-config-typescript": "6.0.0",
-    "@nuxtjs/tailwindcss": "4.0.3",
+    "@nuxtjs/tailwindcss": "4.2.1",
     "@vue/test-utils": "1.2.0",
     "@zazen/eslint-config": "2.3.0",
     "@zazen/stylelint-config": "2.0.0",
